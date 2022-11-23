@@ -1,0 +1,259 @@
+* {
+    font-family:cursive;
+}
+h1 {
+    font-weight: 700;
+    font: size 48px;
+    margin: 0 0 16px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+p{
+    color:#090909;
+    font-size: 24px;
+    margin: 0 0 16px 0;
+}
+section{
+    padding: 64px 128px;
+}
+img{
+    width: 100%;
+}
+/*header section style*/
+header{
+    padding: 16px 128px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ffffff;
+}
+
+nav > a{
+    margin-left: 16px;
+}
+
+nav>a:hover{
+    color:#f5c338;
+}
+/* landing section style */
+#landing {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 16px;
+}
+
+.btn {
+    background-color: #f5c338;
+    color: white;
+    padding: 8px 24px;
+}
+.btn-alt{
+    background-color:white;
+    color: black;
+    border: 1px solid #f5b638;
+    margin-right: 16px;
+}
+/* about section style */
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 16px;
+}
+#about>div{
+    width: 50%;
+}
+
+.about-stats{
+    display: grid;
+    grid-template-columns: repeat( 3,1fr ) ;
+    text-align: center;
+    margin-top: 72px;
+
+}
+.about-stats-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-stats-item>div {
+    width: 50px;
+    height: 10px;
+    background-color: #f5b638;
+}
+/* service section style */ 
+.service-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.service-header h1 {
+    position: relative;
+}
+
+.service-header h1 ::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    background: url("./image/accent1.svg");
+    position: absolute;
+    left: -20px;
+    top: -10px;
+    z-index: -1;
+}
+
+.service-detail {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 128px;
+    margin-top: 72px;
+}
+
+.service-detail-items {
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.service-detail-items:hover {
+    transform: scale(1.15);
+}
+
+.service-detail-items:hover img {
+    filter: grayscale(0);
+}
+
+.service-detail-items img {
+    width: 100%;
+    filter: grayscale(1);
+}
+
+.service-detail-items h2 {
+    padding: 0 16px;
+}
+
+.service-detail-items p {
+    font-size: 16px;
+    padding: 0 16px;
+}
+
+/* contact section style */
+#contact h1 {
+    position: relative;
+}
+
+#contact>h1::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    background: url("./image/accent2.svg");
+    left: -20px;
+    top: -10px;
+    z-index: -1;
+}
+
+.contact-detail {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 72px;
+    column-gap: 128px;
+}
+
+.contact-detail>div,
+.contact-detail>form {
+    width: 50%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #f5b638;
+    padding: 64px 32px;
+}
+
+form h1 {
+    font-size: 32px;
+    text-align: center;
+}
+
+form button {
+    border: none;
+}
+
+form button:hover {
+    cursor: pointer;
+}
+
+.form-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 32px;
+    margin-top: 32px;
+    grid-template-areas: "name subject" "email phone" "message message";
+}
+
+#input-name {
+    grid-area: name;
+}
+
+#input-subject {
+    grid-area: subject;
+}
+
+#input-email {
+    grid-area: email;
+}
+
+#input-phone {
+    grid-area: phone;
+}
+
+#input-message {
+    grid-area: message;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+}
+
+.input-group label {
+    font-weight: 700;
+    margin-bottom: 16px;
+    font-size: 24px;
+}
+
+.input-group input {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    font-size: 20px;
+}
+
+.input-group input:focus {
+    border-bottom: 2px solid #f5b638;
+}
+
+/* footer section style */
+footer {
+    padding: 16px;
+    background-color: #f5b638;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    color: white;
+    width: 50%;
+}
+
+.social-icon {
+    display: flex;
+    gap: 32px;
+}  
